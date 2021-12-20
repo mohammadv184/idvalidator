@@ -29,11 +29,7 @@ func IsValid(value string) (bool, error) {
 		valueSlices = append(valueSlices, uint8(i))
 	}
 
-	// check #1 > *position
-	s, err := calculateNationalIDNumbers(&valueSlices)
-	if err != nil {
-		return true, err
-	}
+	s := calculateNationalIDNumbers(&valueSlices)
 
 	// check #2
 	s %= 11
@@ -46,10 +42,10 @@ func IsValid(value string) (bool, error) {
 }
 
 //calculateNationalIDNumbers Yo
-func calculateNationalIDNumbers(valueSlices *[]uint8) (sum int, err error) {
+func calculateNationalIDNumbers(valueSlices *[]uint8) (sum int) {
 	var i uint8
 	for i = 10; i >= 2; i-- {
 		sum += int(i * (*valueSlices)[10-i])
 	}
-	return sum, nil
+	return sum
 }
