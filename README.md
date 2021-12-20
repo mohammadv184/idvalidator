@@ -1,4 +1,6 @@
 # Iran IDValidator
+[![Go Report Card](https://goreportcard.com/badge/github.com/mohammadv184/idvalidator)](https://goreportcard.com/report/github.com/mohammadv184/idvalidator)
+[![Go Reference](https://pkg.go.dev/badge/github.com/mohammadv184/idvalidator.svg)](https://pkg.go.dev/github.com/mohammadv184/idvalidator)
 
 
 

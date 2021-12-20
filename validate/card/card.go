@@ -24,7 +24,7 @@ func IsValid(value string) (bool, error) {
 		return false, errors.New("first number isn`t valid")
 	}
 
-	// check calcualte *slices < 10
+	// check calculate *slices < 10
 	sum := calculateCardNumbers(&value)
 
 	// check #3 > %10 = 0
