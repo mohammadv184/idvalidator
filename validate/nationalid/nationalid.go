@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-//IsValid Check national id validation
+// IsValid Check national id validation
 func IsValid(value string) (bool, error) {
 	valueCount := len(value)
 	if valueCount < 8 {
@@ -41,7 +41,7 @@ func IsValid(value string) (bool, error) {
 	return true, nil
 }
 
-//calculateNationalIDNumbers Yo
+// calculateNationalIDNumbers Yo
 func calculateNationalIDNumbers(valueSlices *[]uint8) (sum int) {
 	var i uint8
 	for i = 10; i >= 2; i-- {
